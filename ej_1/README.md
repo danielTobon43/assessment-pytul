@@ -6,12 +6,30 @@ pip install -r requirements.txt
 ## Labelmap
 ![Screenshot from 2022-07-21 15-37-21](https://user-images.githubusercontent.com/35694200/180310785-ea4514b7-7dee-4c8d-8ad6-e58298bb685c.png)
 
-## How to use
+## Usage
 ```
-python3 example.py
+python3 main.py
+```
+
+And open http://127.0.0.1:8000
+
+## API Endpoint
+```
+/predict/image/{image_id}
+```
+
+**Response**
+```
+{
+  "report": {
+    "id": {image_id},
+    "class": "Description"
+  }
+}
 ```
 
 ## Example
+Running Local example
 ```
 ➜ python3 example.py                    
 
